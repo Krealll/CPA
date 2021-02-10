@@ -1,0 +1,131 @@
+# callstacks file version: 7
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi
+         1	        -1	     57296	    0	      1	                           func@0x40dfd0	C:\Windows\SysWOW64\cmd.exe	57296	10	0	18	0	0	0	0	0	0	0
+         2	        -1	      6951	    0	      0	                          mainCRTStartup	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	6951	10	0	1	0	0	0	0	0	0	0
+         3	        -1	    417254	    0	      1	                         func@0x4b2e5dcc	C:\Windows\SysWOW64\ntdll.dll	417228	28	0	28	0	0	0	0	0	0	0
+         4	         3	    417302	    0	      1	                         func@0x4b2e5de8	C:\Windows\SysWOW64\ntdll.dll	417256	52	0	29	0	0	0	0	0	0	0
+         5	         4	     99955	    0	      1	                     BaseThreadInitThunk	C:\Windows\SysWOW64\kernel32.dll	99920	81	0	20	0	0	0	0	0	0	0
+         6	         5	      6814	    0	      0	                   _scrt_common_main_seh	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	6565	386	0	2	0	0	0	0	0	0	0
+         7	       108	      4685	    1	      0	              [Loop at line 149 in main]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4672	25	4697	3	0	0	0	0	0	0	0
+         8	       111	      4138	    1	      0	       [Loop at line 28 in print_matrix]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4117	42	4159	9	0	0	0	0	0	0	0
+         9	         8	    218324	    0	      1	std::basic_ostream<char,struct std::char_traits<char> >::operator<<	C:\Windows\SysWOW64\msvcp140.dll	218192	256	0	19	0	0	0	0	0	0	0
+        10	         9	    241021	    0	      1	std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::put	C:\Windows\SysWOW64\msvcp140.dll	240976	55	0	93	0	0	0	0	0	0	0
+        11	        10	    113846	    0	      1	std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::do_put	C:\Windows\SysWOW64\msvcp140.dll	113584	284	0	96	0	0	0	0	0	0	0
+        12	        11	    103140	    0	      1	std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Fput	C:\Windows\SysWOW64\msvcp140.dll	102432	774	0	100	0	0	0	0	0	0	0
+        13	       125	    110346	    1	      1	[Loop@0x1001aeff in std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Put]	C:\Windows\SysWOW64\msvcp140.dll	110335	18	0	104	0	0	0	0	0	0	0
+        14	        13	    102130	    0	      1	                         func@0x10018ede	C:\Windows\SysWOW64\msvcp140.dll	102110	36	0	109	0	0	0	0	0	0	0
+        15	        14	    115541	    0	      1	std::basic_streambuf<char,struct std::char_traits<char> >::sputc	C:\Windows\SysWOW64\msvcp140.dll	115472	81	0	110	0	0	0	0	0	0	0
+        16	        15	     90715	    0	      1	                         func@0x100161a0	C:\Windows\SysWOW64\msvcp140.dll	90528	265	0	112	0	0	0	0	0	0	0
+        17	        16	     73936	    0	      1	                         func@0x100120c0	C:\Windows\SysWOW64\msvcp140.dll	73920	27	0	117	0	0	0	0	0	0	0
+        18	        17	    614050	    0	      1	                                   fputc	C:\Windows\SysWOW64\ucrtbase.dll	613808	270	0	23	0	0	0	0	0	0	0
+        19	        18	    613734	    0	      1	                            fputc_nolock	C:\Windows\SysWOW64\ucrtbase.dll	613712	40	0	30	0	0	0	0	0	0	0
+        20	        19	    219351	    0	      1	                         func@0x1003584b	C:\Windows\SysWOW64\ucrtbase.dll	219211	174	0	31	0	0	0	0	0	0	0
+        21	        20	    455511	    0	      1	                         func@0x1006f34b	C:\Windows\SysWOW64\ucrtbase.dll	455499	28	0	37	0	0	0	0	0	0	0
+        22	        21	    220097	    0	      1	                                   write	C:\Windows\SysWOW64\ucrtbase.dll	219968	156	0	38	0	0	0	0	0	0	0
+        23	        22	    220386	    0	      1	                         func@0x10035bf6	C:\Windows\SysWOW64\ucrtbase.dll	220150	288	0	39	0	0	0	0	0	0	0
+        24	        96	    221177	    1	      1	    [Loop@0x10035fa2 in func@0x10035f4f]	C:\Windows\SysWOW64\ucrtbase.dll	221090	113	0	40	0	0	0	0	0	0	0
+        25	        24	    988366	    0	      1	                               WriteFile	C:\Windows\SysWOW64\KernelBase.dll	988256	304	0	22	0	0	0	0	0	0	0
+        26	        25	    456332	    0	      1	                             NtWriteFile	C:\Windows\SysWOW64\ntdll.dll	456320	16	0	33	0	0	0	0	0	0	0
+        27	        17	    613966	    0	      1	                                   fputc	C:\Windows\SysWOW64\ucrtbase.dll	613808	270	0	23	0	0	0	0	0	0	0
+        28	         6	      4889	    0	      0	                                    main	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4192	1323	0	4	0	0	0	0	0	0	0
+        29	       114	      4150	    1	      0	       [Loop at line 28 in print_matrix]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4117	42	4159	9	0	0	0	0	0	0	0
+        30	        29	      6075	    0	      0	std::operator<<<struct std::char_traits<char> >	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	5712	578	0	12	0	0	0	0	0	0	0
+        31	        30	    246624	    0	      1	std::basic_streambuf<char,struct std::char_traits<char> >::sputn	C:\Windows\SysWOW64\msvcp140.dll	246592	39	0	118	0	0	0	0	0	0	0
+        32	        31	     94427	    0	      1	                         func@0x10017020	C:\Windows\SysWOW64\msvcp140.dll	94240	213	0	119	0	0	0	0	0	0	0
+        33	        32	    217997	    0	      1	                                  fwrite	C:\Windows\SysWOW64\ucrtbase.dll	217920	86	0	42	0	0	0	0	0	0	0
+        34	        33	    218048	    0	      1	                         func@0x10035396	C:\Windows\SysWOW64\ucrtbase.dll	218006	70	0	43	0	0	0	0	0	0	0
+        35	        34	    218157	    0	      1	                         func@0x100353ec	C:\Windows\SysWOW64\ucrtbase.dll	218092	75	0	44	0	0	0	0	0	0	0
+        36	        35	    217879	    0	      1	                         func@0x100352f2	C:\Windows\SysWOW64\ucrtbase.dll	217842	63	0	45	0	0	0	0	0	0	0
+        37	        36	    218999	    0	      1	                         func@0x1003573e	C:\Windows\SysWOW64\ucrtbase.dll	218942	94	0	46	0	0	0	0	0	0	0
+        38	        37	    220097	    0	      1	                                   write	C:\Windows\SysWOW64\ucrtbase.dll	219968	156	0	38	0	0	0	0	0	0	0
+        39	        38	    220386	    0	      1	                         func@0x10035bf6	C:\Windows\SysWOW64\ucrtbase.dll	220150	288	0	39	0	0	0	0	0	0	0
+        40	        98	    221177	    1	      1	    [Loop@0x10035fa2 in func@0x10035f4f]	C:\Windows\SysWOW64\ucrtbase.dll	221090	113	0	40	0	0	0	0	0	0	0
+        41	        40	    988366	    0	      1	                               WriteFile	C:\Windows\SysWOW64\KernelBase.dll	988256	304	0	22	0	0	0	0	0	0	0
+        42	        41	    456332	    0	      1	                             NtWriteFile	C:\Windows\SysWOW64\ntdll.dll	456320	16	0	33	0	0	0	0	0	0	0
+        43	        17	    613878	    0	      1	                                   fputc	C:\Windows\SysWOW64\ucrtbase.dll	613808	270	0	23	0	0	0	0	0	0	0
+        44	        43	    287082	    0	      1	                 RtlEnterCriticalSection	C:\Windows\SysWOW64\ntdll.dll	287056	75	0	34	0	0	0	0	0	0	0
+        45	        10	    113809	    0	      1	std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::do_put	C:\Windows\SysWOW64\msvcp140.dll	113584	284	0	96	0	0	0	0	0	0	0
+        46	        45	    115659	    0	      1	                         func@0x1001c3b5	C:\Windows\SysWOW64\msvcp140.dll	115637	28	0	120	0	0	0	0	0	0	0
+        47	        46	    115592	    0	      1	                         func@0x1001c367	C:\Windows\SysWOW64\msvcp140.dll	115559	46	0	121	0	0	0	0	0	0	0
+        48	        47	    215630	    0	      1	                _stdio_common_vsprintf_s	C:\Windows\SysWOW64\ucrtbase.dll	215600	36	0	47	0	0	0	0	0	0	0
+        49	        48	    215691	    0	      1	                         func@0x10034a54	C:\Windows\SysWOW64\ucrtbase.dll	215636	82	0	48	0	0	0	0	0	0	0
+        50	        49	    182178	    0	      1	                         func@0x1002c520	C:\Windows\SysWOW64\ucrtbase.dll	181536	1036	0	50	0	0	0	0	0	0	0
+        51	        50	    184465	    0	      1	                         func@0x1002ce50	C:\Windows\SysWOW64\ucrtbase.dll	183888	920	0	53	0	0	0	0	0	0	0
+        52	        51	    183477	    0	      1	                         func@0x1002cc25	C:\Windows\SysWOW64\ucrtbase.dll	183333	277	0	63	0	0	0	0	0	0	0
+        53	        52	    223566	    0	      1	                         func@0x10036873	C:\Windows\SysWOW64\ucrtbase.dll	223347	224	0	64	0	0	0	0	0	0	0
+        54	       120	      5008	    1	      0	              [Loop at line 150 in main]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	5008	29	5037	13	0	0	0	0	0	0	0
+        55	       100	    350619	    1	      1	    [Loop@0x10055984 in func@0x10055970]	C:\Windows\SysWOW64\ucrtbase.dll	350596	14	0	65	0	0	0	0	0	0	0
+        56	         6	      5216	    0	      0	                                    main	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4192	1323	0	4	0	0	0	0	0	0	0
+        57	       123	      4150	    1	      0	       [Loop at line 28 in print_matrix]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4117	42	4159	9	0	0	0	0	0	0	0
+        58	        57	      6075	    0	      0	std::operator<<<struct std::char_traits<char> >	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	5712	578	0	12	0	0	0	0	0	0	0
+        59	        58	    246624	    0	      1	std::basic_streambuf<char,struct std::char_traits<char> >::sputn	C:\Windows\SysWOW64\msvcp140.dll	246592	39	0	118	0	0	0	0	0	0	0
+        60	        59	     94427	    0	      1	                         func@0x10017020	C:\Windows\SysWOW64\msvcp140.dll	94240	213	0	119	0	0	0	0	0	0	0
+        61	        60	    217997	    0	      1	                                  fwrite	C:\Windows\SysWOW64\ucrtbase.dll	217920	86	0	42	0	0	0	0	0	0	0
+        62	        61	    218048	    0	      1	                         func@0x10035396	C:\Windows\SysWOW64\ucrtbase.dll	218006	70	0	43	0	0	0	0	0	0	0
+        63	        62	    218157	    0	      1	                         func@0x100353ec	C:\Windows\SysWOW64\ucrtbase.dll	218092	75	0	44	0	0	0	0	0	0	0
+        64	        63	    217879	    0	      1	                         func@0x100352f2	C:\Windows\SysWOW64\ucrtbase.dll	217842	63	0	45	0	0	0	0	0	0	0
+        65	        64	    218999	    0	      1	                         func@0x1003573e	C:\Windows\SysWOW64\ucrtbase.dll	218942	94	0	46	0	0	0	0	0	0	0
+        66	        65	    220097	    0	      1	                                   write	C:\Windows\SysWOW64\ucrtbase.dll	219968	156	0	38	0	0	0	0	0	0	0
+        67	        66	    220386	    0	      1	                         func@0x10035bf6	C:\Windows\SysWOW64\ucrtbase.dll	220150	288	0	39	0	0	0	0	0	0	0
+        68	       102	    221177	    1	      1	    [Loop@0x10035fa2 in func@0x10035f4f]	C:\Windows\SysWOW64\ucrtbase.dll	221090	113	0	40	0	0	0	0	0	0	0
+        69	        68	    988366	    0	      1	                               WriteFile	C:\Windows\SysWOW64\KernelBase.dll	988256	304	0	22	0	0	0	0	0	0	0
+        70	        69	    456332	    0	      1	                             NtWriteFile	C:\Windows\SysWOW64\ntdll.dll	456320	16	0	33	0	0	0	0	0	0	0
+        71	        21	    220115	    0	      1	                                   write	C:\Windows\SysWOW64\ucrtbase.dll	219968	156	0	38	0	0	0	0	0	0	0
+        72	        71	    220148	    0	      1	                         func@0x10035bdc	C:\Windows\SysWOW64\ucrtbase.dll	220124	26	0	67	0	0	0	0	0	0	0
+        73	        72	    286930	    0	      1	                 RtlLeaveCriticalSection	C:\Windows\SysWOW64\ntdll.dll	286912	131	0	35	0	0	0	0	0	0	0
+        74	         6	      5503	    0	      0	                                    main	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4192	1323	0	4	0	0	0	0	0	0	0
+        75	        74	    927749	    0	      1	                         func@0x100e26fa	C:\Windows\SysWOW64\ucrtbase.dll	927482	1619	0	68	0	0	0	0	0	0	0
+        76	        75	    917264	    0	      1	                         func@0x100dfd01	C:\Windows\SysWOW64\ucrtbase.dll	916737	1151	0	92	0	0	0	0	0	0	0
+        77	        76	    920172	    0	      1	                         func@0x100e0671	C:\Windows\SysWOW64\ucrtbase.dll	919153	1422	0	114	0	0	0	0	0	0	0
+        78	        77	   1080317	    0	      1	                         func@0x55107a08	C:\Program Files (x86)\Intel\oneAPI\advisor\2021.1.1\bin32\tpsstool.dll	1079816	548	0	36	0	0	0	0	0	0	0
+        79	        78	   1612379	    0	      1	                          CreateProcessA	C:\Windows\SysWOW64\KernelBase.dll	1612336	48	0	24	0	0	0	0	0	0	0
+        80	        79	   1613226	    0	      1	                  CreateProcessInternalA	C:\Windows\SysWOW64\KernelBase.dll	1612528	777	0	25	0	0	0	0	0	0	0
+        81	        80	    868660	    0	      1	                  CreateProcessInternalW	C:\Windows\SysWOW64\KernelBase.dll	859952	10547	0	32	0	0	0	0	0	0	0
+        82	        81	    134363	    0	      1	   BasepConstructSxsCreateProcessMessage	C:\Windows\SysWOW64\kernel32.dll	132800	1828	0	21	0	0	0	0	0	0	0
+        83	        82	    130231	    0	      1	                         func@0x6b81fc12	C:\Windows\SysWOW64\kernel32.dll	130066	342	0	26	0	0	0	0	0	0	0
+        84	        83	    393497	    0	      1	                         func@0x6b8600ed	C:\Windows\SysWOW64\kernel32.dll	393453	177	0	27	0	0	0	0	0	0	0
+        85	        84	    317235	    0	      1	        RtlGetThreadPreferredUILanguages	C:\Windows\SysWOW64\ntdll.dll	317040	1246	0	49	0	0	0	0	0	0	0
+        86	        85	    319789	    0	      1	           RtlpCreateProcessRegistryInfo	C:\Windows\SysWOW64\ntdll.dll	319712	99	0	56	0	0	0	0	0	0	0
+        87	        86	    169082	    0	      1	                         func@0x4b2a9456	C:\Windows\SysWOW64\ntdll.dll	169046	81	0	57	0	0	0	0	0	0	0
+        88	        87	    172111	    0	      1	              RtlpMuiRegLoadRegistryInfo	C:\Windows\SysWOW64\ntdll.dll	171888	250	0	91	0	0	0	0	0	0	0
+        89	        88	    318686	    0	      1	                         func@0x4b2cdc57	C:\Windows\SysWOW64\ntdll.dll	318551	258	0	94	0	0	0	0	0	0	0
+        90	        89	    173370	    0	      1	                         func@0x4b2aa484	C:\Windows\SysWOW64\ntdll.dll	173188	939	0	97	0	0	0	0	0	0	0
+        91	        90	    456492	    0	      1	                               NtOpenKey	C:\Windows\SysWOW64\ntdll.dll	456480	16	0	159	0	0	0	0	0	0	0
+        92	        76	    920434	    0	      1	                         func@0x100e0671	C:\Windows\SysWOW64\ucrtbase.dll	919153	1422	0	114	0	0	0	0	0	0	0
+        93	        92	    993457	    0	      1	                     WaitForSingleObject	C:\Windows\SysWOW64\KernelBase.dll	993440	22	0	78	0	0	0	0	0	0	0
+        94	       127	    993624	    1	      1	[Loop@0x100f2950 in WaitForSingleObjectEx]	C:\Windows\SysWOW64\KernelBase.dll	993616	39	0	81	0	0	0	0	0	0	0
+        95	        94	    456268	    0	      1	                   NtWaitForSingleObject	C:\Windows\SysWOW64\ntdll.dll	456256	16	0	162	0	0	0	0	0	0	0
+        96	        23	    221090	    0	      1	                         func@0x10035f4f	C:\Windows\SysWOW64\ucrtbase.dll	221007	215	0	41	0	0	0	0	0	0	0
+        97	        23	    221177	    0	      1	                         func@0x10035f4f	C:\Windows\SysWOW64\ucrtbase.dll	221007	215	0	41	0	0	0	0	0	0	0
+        98	        39	    221090	    0	      1	                         func@0x10035f4f	C:\Windows\SysWOW64\ucrtbase.dll	221007	215	0	41	0	0	0	0	0	0	0
+        99	        39	    221177	    0	      1	                         func@0x10035f4f	C:\Windows\SysWOW64\ucrtbase.dll	221007	215	0	41	0	0	0	0	0	0	0
+       100	        23	    350596	    0	      1	                         func@0x10055970	C:\Windows\SysWOW64\ucrtbase.dll	350576	45	0	66	0	0	0	0	0	0	0
+       101	        23	    350619	    0	      1	                         func@0x10055970	C:\Windows\SysWOW64\ucrtbase.dll	350576	45	0	66	0	0	0	0	0	0	0
+       102	        67	    221090	    0	      1	                         func@0x10035f4f	C:\Windows\SysWOW64\ucrtbase.dll	221007	215	0	41	0	0	0	0	0	0	0
+       103	        67	    221177	    0	      1	                         func@0x10035f4f	C:\Windows\SysWOW64\ucrtbase.dll	221007	215	0	41	0	0	0	0	0	0	0
+       104	         6	      4596	    0	      0	                                    main	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4192	1323	0	4	0	0	0	0	0	0	0
+       105	       104	      4624	    1	      0	              [Loop at line 149 in main]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4596	183	4779	8	0	0	0	0	0	0	0
+       106	       105	      4640	    1	      0	              [Loop at line 149 in main]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4624	134	4758	7	0	0	0	0	0	0	0
+       107	       106	      4656	    1	      0	              [Loop at line 149 in main]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4640	94	4734	6	0	0	0	0	0	0	0
+       108	       107	      4672	    1	      0	              [Loop at line 149 in main]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4656	60	4716	5	0	0	0	0	0	0	0
+       109	         6	      4685	    0	      0	                                    main	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4192	1323	0	4	0	0	0	0	0	0	0
+       110	         6	      4112	    0	      0	                            print_matrix	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4096	88	0	10	0	0	0	0	0	0	0
+       111	       110	      4117	    1	      0	       [Loop at line 26 in print_matrix]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4112	68	4180	11	0	0	0	0	0	0	0
+       112	         6	      4138	    0	      0	                            print_matrix	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4096	88	0	10	0	0	0	0	0	0	0
+       113	        28	      4112	    0	      0	                            print_matrix	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4096	88	0	10	0	0	0	0	0	0	0
+       114	       113	      4117	    1	      0	       [Loop at line 26 in print_matrix]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4112	68	4180	11	0	0	0	0	0	0	0
+       115	        28	      4150	    0	      0	                            print_matrix	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4096	88	0	10	0	0	0	0	0	0	0
+       116	         6	      4944	    0	      0	                                    main	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4192	1323	0	4	0	0	0	0	0	0	0
+       117	       116	      4961	    1	      0	              [Loop at line 150 in main]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4944	164	5108	17	0	0	0	0	0	0	0
+       118	       117	      4976	    1	      0	              [Loop at line 150 in main]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4961	126	5087	16	0	0	0	0	0	0	0
+       119	       118	      4992	    1	      0	              [Loop at line 150 in main]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4976	91	5067	15	0	0	0	0	0	0	0
+       120	       119	      5008	    1	      0	              [Loop at line 150 in main]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4992	57	5049	14	0	0	0	0	0	0	0
+       121	         6	      5008	    0	      0	                                    main	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4192	1323	0	4	0	0	0	0	0	0	0
+       122	        56	      4112	    0	      0	                            print_matrix	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4096	88	0	10	0	0	0	0	0	0	0
+       123	       122	      4117	    1	      0	       [Loop at line 26 in print_matrix]	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4112	68	4180	11	0	0	0	0	0	0	0
+       124	        56	      4150	    0	      0	                            print_matrix	C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe	4096	88	0	10	0	0	0	0	0	0	0
+       125	        12	    110335	    0	      1	std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Put	C:\Windows\SysWOW64\msvcp140.dll	110320	51	0	106	0	0	0	0	0	0	0
+       126	        12	    110346	    0	      1	std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Put	C:\Windows\SysWOW64\msvcp140.dll	110320	51	0	106	0	0	0	0	0	0	0
+       127	        93	    993616	    0	      1	                   WaitForSingleObjectEx	C:\Windows\SysWOW64\KernelBase.dll	993472	264	0	82	0	0	0	0	0	0	0
+       128	        93	    993624	    0	      1	                   WaitForSingleObjectEx	C:\Windows\SysWOW64\KernelBase.dll	993472	264	0	82	0	0	0	0	0	0	0
+       129	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	1	0	318	0	0	0	0	0	0	0

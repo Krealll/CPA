@@ -1,0 +1,52 @@
+-r
+C:\Users\User\source\repos\AVP_1\AVP_1\My Advisor Results - AVP_1\e000\hs003
+--mrte-mode=auto
+--follow-child
+--return-app-exitcode
+--strategy=ld-linux.so.2:notrace:notrace,ld-linux-x86-64.so.2:notrace:notrace
+--interval=10
+--data-limit-mb=500
+--stack-stitching
+--itt-config=frame,task,event,counter,model
+--stackwalk=offline
+--mrte-type=java,dotnet,python
+--type=cpu:stack
+--opencl-trace-mode=default
+--search-dir
+sym=C:\Users\User\source\repos\AVP_1\Release
+--search-dir
+sym=C:\Users\User\source\repos\AVP_1
+--search-dir
+bin=C:\Users\User\source\repos\AVP_1\Release
+--search-dir
+bin=C:\Users\User\source\repos\AVP_1
+--search-dir
+bin=C:/Users\User\source\repos\AVP_1\AVP_1\$(VC_ExecutablePath_x86)
+--search-dir
+bin=C:/Users\User\source\repos\AVP_1\AVP_1\$(WindowsSDK_ExecutablePath)
+--search-dir
+bin=C:/Users\User\source\repos\AVP_1\AVP_1\$(VS_ExecutablePath)
+--search-dir
+bin=C:/Users\User\source\repos\AVP_1\AVP_1\$(MSBuild_ExecutablePath)
+--search-dir
+bin=C:\Windows\SysWow64
+--search-dir
+bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Static Analysis Tools\FxCop
+--search-dir
+bin=D:\programs\bin
+--search-dir
+bin=D:\programs\utils\bin
+--search-dir
+bin=D:\BSUIR_ARCHIVE\4_sem\APC\7 COM\comVS\Com\MakeFile
+--search-dir
+bin=C:\Windows\System32
+--search-dir
+bin=D:\libs\opencv\build\x64\vc15\bin
+--search-dir
+bin=C:\Program Files\Microchip\xc8\v2.31\bin
+--search-dir
+bin=C:\Program Files\Java\jdk1.8.0_241\bin
+--search-dir
+bin=C:\Program Files\Apache Software Foundation\Tomcat 9.0_Tomcat\bin
+--
+C:\Users\User\source\repos\AVP_1\Release\AVP_1.exe
