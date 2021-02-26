@@ -1,0 +1,5 @@
+﻿  Source.cpp
+d:\bsuir_archive\source\repos\avp_3\avp_3\source.cpp(86): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\bsuir_archive\source\repos\avp_3\avp_3\source.cpp(89): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\bsuir_archive\source\repos\avp_3\avp_3\source.cpp(96): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  AVP_3.vcxproj -> D:\BSUIR_ARCHIVE\source\repos\AVP_3\Debug\AVP_3.exe

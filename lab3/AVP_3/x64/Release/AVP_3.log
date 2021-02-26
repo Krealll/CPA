@@ -1,0 +1,10 @@
+﻿  Source.cpp
+d:\bsuir_archive\source\repos\avp_3\avp_3\source.cpp(87): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\bsuir_archive\source\repos\avp_3\avp_3\source.cpp(90): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\bsuir_archive\source\repos\avp_3\avp_3\source.cpp(97): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  Создание кода
+  1 of 163 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  AVP_3.vcxproj -> D:\BSUIR_ARCHIVE\source\repos\AVP_3\x64\Release\AVP_3.exe
